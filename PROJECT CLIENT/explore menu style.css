@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Norican&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+}
+/*                "INDEX/ ABOUT/ EXPLORE MENU/ LOCATION" navbar start */
+.img{
+    height: 100px;
+    margin-left: 50px;
+}
+/*                "INDEX/ ABOUT/ EXPLORE MENU/ LOCATION" navbar end */
+  
+/*                            "ABOUT/ EXPLORE MENU/ LOCATION" banner start*/
+/*                       background img start*/
+.abouttop{
+    position: relative; 
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+} 
+.imgg{
+    opacity: 0.2;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+  
+}
+ .design{
+    font-family: "Dancing Script";
+    font-weight:bolder;
+}
+.content {
+    text-align: center; 
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    z-index: 1; 
+} 
+.breadcrumb {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding-left: 0;
+}
+
+.breadcrumb-item{
+    margin-right: 5px;
+}
+@media (max-width: 767px) {
+    .imgabout img {
+        max-width: 100%;
+    }
+}
+  /*                                 background img end */
+  /*                          "ABOUT/ EXPLORE MENU/ LOCATION" banner start */
+
+  /*                                 #EXPLORE MENU WORK START# */
+.menu{
+    position: relative;
+    width: 100%;
+    height: 520px;
+    background-image: url("./Photo/menu\ floral-background_181182-26283.avif");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+}
+  
+.menu1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-top: 80px;
+}
+  
+.image{
+    max-width: 100%;
+    height: auto;
+    margin-top: 50px;
+}
+
+  /*                                   unlimited menu card start */
+.card-1{
+    display: flex;
+    justify-content: center;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.anker{
+    transition: background-color color 0.3s; 
+    background-color: grey; 
+}
+
+.anker:hover{
+    cursor: pointer;
+    background-color: rgb(211, 43, 43)!important;
+    color: ghostwhite!important;
+}
+
+
+@media screen and (max-width: 480px) { 
+    .anker{
+        transition: background-color color 0.3s; 
+        background-color: grey; 
+    }
+    .anker:hover{
+      cursor: pointer;
+      background-color: rgb(211, 43, 43)!important;
+      color: ghostwhite!important;
+    }
+  }
+/*                                   unlimited menu card end */
+
+  /*                             #EXPLORE MENU WORK END#       */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

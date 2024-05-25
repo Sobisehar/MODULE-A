@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Final Project</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="location style.css">
+    <link rel="stylesheet" href="about style.css">
+    <link rel="stylesheet" href="explore menu style.css">
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!--  font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--               slider banner link -->
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11.1.0/swiper-bundle.min.css" rel="stylesheet"/>
+
+    <!--               card slider link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+  </head>
+  <body>
+    <!--                         navbar start -->
+    <nav class="navbar navbar-expand-lg bg-danger">
+      <div class="container-fluid">
+        <img src="./Photo/pizzaup-removebg-preview.png" class="img" alt="">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-light"  style="font-size: larger;" aria-current="page" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-light" style="font-size: larger;" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-light" style="font-size: larger;" href="./explore menu.html">Explore Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-light" style="font-size: larger;"href="./location.html">Location</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!--          Navbar end -->
+
+    <!--                      Banner start -->
+<div class="swiper swiper-scale-effect">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <div class="slide-01 swiper-slide-cover text-end">
+         <h1 style="margin-right:70px; margin-top: 200px; font-family: 'Dancing Script'; color: rgb(255, 221, 0);">PIZZA UP <i class="fa-solid fa-pizza-slice" style=" color: rgb(255, 221, 0);"></i></h1>
+         <h1 style="margin-right:20px;margin-top: 10px; font-family: 'Dancing Script'; color: rgb(255, 221, 0);">EVERY BITE IS MINE <i class="fa-solid fa-thumbs-up"></i></h1>
+        </div>
+      <div>Slide 01</div>
+    </div>
+    <div class="swiper-slide">
+      <div class="slide-02 swiper-slide-cover"></div>
+      <div>Slide 02</div>
+    </div>
+    <div class="swiper-slide">
+      <div class="slide-03 swiper-slide-cover"></div>
+      <div>Slide 03</div>
+    </div>
+    <div class="swiper-slide">
+      <div class="slide-04 swiper-slide-cover"></div>
+      <div>Slide 04</div>
+    </div>
+    <div class="swiper-slide">
+      <div class="slide-05 swiper-slide-cover"></div>
+      <div>Slide 05</div>
+    </div>
+    </div>
+  <!-- Add pagination -->
+  <div class="swiper-pagination"></div>
+  <!-- Add navigation arrows -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+  </div>
+</div>
+    <!--                   Banner End -->
+
+    <!--                  8 Card Start -->
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="text-light mt-5 mb-5" style="font-family: 'Dancing Script'; background-color: rgb(224, 47, 47);">
+            INTRODUCING NEW LAUNCH
+          </h1>
+        </div>
+
+        <div class="col-12 mb-3 col-md-6 col-lg-3">
+          <div class="card p-3 shadow">
+            <img
+              src="./Photo/loaded fries1.jpeg"
+              class="card-img-top w-100"
+              height="150px"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Loaded Fries</h5>
+              <a href="./location.html" class="btn btn-secondary-500 text-secondary border-secondary anker">BUY NOW</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 mb-3 col-md-6 col-lg-3">
+          <div class="card p-3 shadow">
+            <img
+              src="./Photo/loaded fries.jpg"
+              class="card-img-top w-100"
+              height="150px"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Chicken Loaded Fries</h5>
+              <a href="./location.html" class="btn btn-secondary-500 text-secondary border-secondary anker">BUY NOW</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 mb-3 col-md-6 col-lg-3">
+          <div class="card p-3 shadow">
+            <img
+              src="./Photo/mince loaded fries.jpg"
+              class="card-img-top w-100"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Mince Loaded Fries</h5>
+              <a href="./location.html" class="btn btn-secondary-500 text-secondary border-secondary anker">BUY NOW</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 mb-3 col-md-6 col-lg-3">
+          <div class="card p-3 shadow">
+            <img
+              src="./Photo/loaded fries 6.jpg"
+              class="card-img-top w-100"
+              height="150px"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Creamy Loaded Fries</h5>
+              <a href="./location.html" class="btn btn-secondary-500 text-secondary border-secondary anker">BUY NOW</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 mb-3 col-md-6 col-lg-3">
+          <div class="card p-3 shadow">
+            <img
+              src="./Photo/creamy chicken lasagne.jpeg"
+              class="card-img-top w-100"
+              height="150px"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Creamy Lasagne</h5>
+              <a href="./location.html" class="btn btn-secondary-500 text-secondary border-secondary anker">BUY NOW</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 mb-3 col-md-6 col-lg-3">
+          <div class="card p-3 shadow">
+            <img
+              src="./Photo/lasagna10.jpg"
+              class="card-img-top w-100"
+              height="150px"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Cheese Lasagna</h5>
+              <a href="./location.html" class="btn btn-secondary-500 text-secondary border-secondary anker">BUY NOW</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 mb-3 col-md-6 col-lg-3">
+          <div class="card p-3 shadow">
+            <img
+              src="./Photo/lasagna7.jpeg"
+              class="card-img-top w-100"
+              height="150px"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Maxican Lasagna</h5>
+              <a href="./location.html" class="btn btn-secondary-500 text-secondary border-secondary anker">BUY NOW</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 mb-3 col-md-6 col-lg-3">
+          <div class="card p-3 shadow">
+            <img
+              src="./Photo/lasagna4.jpg"
+              class="card-img-top w-100"
+              height="150px"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Mughlai Lasagna</h5>
+              <a href="./location.html" class="btn btn-secondary-500 text-secondary border-secondary anker">BUY NOW</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--                         8 card end -->
+
+
+    <!--                     *card pizza slider start* --> 
+   
+    <div class="container">
+      <h2 class="title text-danger" style="font-family: 'Dancing Script';">Our Pizza</h2>
+      <p class="description text-dark">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam atque et eius
+          reiciendis.
+          Obcaecati atque ducimus nostrum porro enim exercitationem dignissimos adipisci similique, necessitatibus
+          impedit. Inventore veniam modi necessitatibus commodi?
+      </p>
+      <div class="cards-slider">
+        <div class="slider-wrapper">
+              <div class="slide">
+                  <div class="img-container">
+                      <img src="./Photo/pizza1.jpg" alt="" class="cards-image">
+                      <div class="cards-info">
+                        <div class="cards-title">CICILIAN</div>
+                          <a href="./location.html"><button class="add-to-cart">BUY NOW</button></a>
+                      </div>
+                  </div>
+              </div>
+              <div class="slide">
+                <div class="img-container">
+                      <img src="./Photo/afghani pizza.webp" alt="" class="cards-image">
+                      <div class="cards-info">
+                          <div class="cards-title">AFGHANI PIZZA</div>
+                          <a href="./location.html"><button class="add-to-cart">BUY NOW</button></a>
+                      </div>
+                  </div>
+              </div>
+              <div class="slide">
+                  <div class="img-container">
+                      <img src="./Photo/chicken shawarma pizza.jpeg" alt="" class="cards-image">
+                      <div class="cards-info">
+                          <div class="cards-title">ARABIC GREEN</div>
+                          <a href="./location.html"><button class="add-to-cart">BUY NOW</button></a>
+                      </div>
+                  </div>
+              </div>
+              <div class="slide">
+                  <div class="img-container">
+                      <img src="./Photo/pizza3.jpg" alt="" class="cards-image">
+                      <div class="cards-info">
+                          <div class="cards-title">CREAMY TIKKA</div>
+                          <a href="./location.html"><button class="add-to-cart">BUY NOW</button></a>
+                      </div>
+                  </div>
+              </div>
+              <div class="slide">
+                  <div class="img-container">
+                      <img src="./Photo/pizza2.jpg" alt="" class="cards-image">
+                      <div class="cards-info">
+                          <div class="cards-title">CREAMY SUPER UP</div>
+                          <a href="./location.html"><button class="add-to-cart">BUY NOW</button></a>
+                      </div>
+                  </div>
+              </div>
+              <div class="slide">
+                  <div class="img-container">
+                      <img src="./Photo/pizza8.jpeg" alt="" class="cards-image">
+                      <div class="cards-info">
+                          <div class="cards-title">CHICKEN BBQ</div>
+                          <a href="./location.html"><button class="add-to-cart">BUY NOW</button></a>
+                      </div>
+                  </div>
+              </div>
+              <div class="slide">
+                  <div class="img-container">
+                      <img src="./Photo/pizza4.jpg" alt="" class="cards-image">
+                      <div class="cards-info">
+                        <div class="cards-title">CHICKEN BIHARI</div>
+                        <a href="./location.html"><button class="add-to-cart">BUY NOW</button></a>
+                      </div>
+                  </div>
+                </div>
+              <div class="slide">
+                  <div class="img-container">
+                    <img src="./Photo/pizza19.jpg" alt="" class="cards-image">
+                      <div class="cards-info">
+                          <div class="cards-title">ITALIAN</div>
+                          <a href="./location.html"><button class="add-to-cart">BUY NOW</button></a>
+                        </div>
+                      </div>
+              </div>
+              <div class="slide">
+                <div class="img-container">
+                      <img src="./Photo/pizza10.jpg" alt="" class="cards-image">
+                      <div class="cards-info">
+                        <div class="cards-title">MUGHLAI</div>
+                        <a href="./location.html"><button class="add-to-cart">BUY NOW</button></a>
+                      </div>
+                    </div>
+              </div>
+              <div class="slide">
+                <div class="img-container">
+                      <img src="./Photo/pizza20.jpg" alt="" class="cards-image">
+                      <div class="cards-info">
+                        <div class="cards-title">HANEEF BURGER</div>
+                        <a href="./location.html"><button class="add-to-cart">BUY NOW</button></a>
+                      </div>
+                    </div>
+              </div>
+              <div class="slide">
+                  <div class="img-container">
+                      <img src="./Photo/chicken tikka pizza.jpg" alt="" class="cards-image">
+                      <div class="cards-info">
+                          <div class="cards-title">CHICKEN TIKKA</div>
+                          <a href="./location.html"><button class="add-to-cart">BUY NOW</button></a>
+                      </div>
+                  </div>
+              </div>
+              <div class="slide">
+                  <div class="img-container">
+                      <img src="./Photo/pizza15.avif" alt="" class="cards-image">
+                      <div class="cards-info">
+                          <div class="cards-title">ZINGER BURGER</div>
+                          <a href="./location.html"><button class="add-to-cart">BUY NOW</button></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slide">
+                  <div class="img-container">
+                      <img src="./Photo/pizza11.jpg" alt="" class="cards-image">
+                      <div class="cards-info">
+                          <div class="cards-title">FAJITA</div>
+                          <a href="./location.html"><button class="add-to-cart">BUY NOW</button></a>
+                        </div>
+                  </div>
+              </div>
+              <div class="slide">
+                  <div class="img-container">
+                    <img src="./Photo/pizza16.jpeg" alt="" class="cards-image">
+                    <div class="cards-info">
+                          <div class="cards-title">CHICKEN TANDOORI</div>
+                          <a href="./location.html"><button class="add-to-cart">BUY NOW</button></a>
+                        </div>
+                      </div>
+              </div>
+              <div class="slide">
+                <div class="img-container">
+                  <img src="./Photo/pizza17.avif" alt="" class="cards-image">
+                  <div class="cards-info">
+                    <div class="cards-title">CHEESE LOVER</div>
+                    <a href="./location.html"><button class="add-to-cart">BUY NOW</button></a>
+                      </div>
+                    </div>
+                  </div>
+              <div class="slide">
+                <div class="img-container">
+                  <img src="./Photo/pizza18.avif" alt="" class="cards-image">
+                  <div class="cards-info">
+                    <div class="cards-title">ARABIA GREEN</div>
+                    <a href="./location.html"><button class="add-to-cart">BUY NOW</button></a>
+                        </div>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="img-container">
+                    <img src="./Photo/pizza19.jpg" alt="" class="cards-image">
+                      <div class="cards-info">
+                        <div class="cards-title">CHICKEN MALAI BOTI</div>
+                        <a href="./location.html"><button class="add-to-cart">BUY NOW</button></a>
+                        </div>
+                      </div>
+              </div>
+              <div class="slide">
+                <div class="img-container">
+                  <img src="./Photo/pizza20.jpg" alt="" class="cards-image">
+                  <div class="cards-info">
+                    <div class="cards-title">CREAMY MALAI</div>
+                    <a class="add-to-cart" href="./location.html"><button>BUY NOW</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--                        *card pizza slider end* -->
+
+        <!--                           *card lasagna slider start* -->
+        <div class="container">
+          <h2 class="title text-danger" style="font-family: 'Dancing Script'; text-align: center;">Our Lasagna</h2>
+          <p class="description  text-dark">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam atque et eius
+              reiciendis.
+              Obcaecati atque ducimus nostrum porro enim exercitationem dignissimos adipisci similique, necessitatibus
+              impedit. Inventore veniam modi necessitatibus commodi?
+          </p>
+          <div class="cards-slider">
+            <div class="slider-wrapper">
+                  <div class="slide">
+                      <div class="img-container">
+                          <img src="./Photo/lasagna1.jpeg" alt="" class="cards-image">
+                          <div class="cards-info">
+                            <div class="cards-title">Mince Arabic Green</div>
+                            <a href="./location.html"><button class="add-to-cart">BUY NOW</button></a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="slide">
+                    <div class="img-container">
+                          <img src="./Photo/lasagna2.jpg" alt="" class="cards-image">
+                          <div class="cards-info">
+                              <div class="cards-title">Mince Tikka</div>
+                              <a href="./location.html"><button class="add-to-cart">BUY NOW</button></a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="slide">
+                      <div class="img-container">
+                          <img src="./Photo/lasagna3.jpg" alt="" class="cards-image">
+                          <div class="cards-info">
+                              <div class="cards-title">Mince Mughlai</div>
+                              <a href="./location.html"><button class="add-to-cart">BUY NOW</button></a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="slide">
+                      <div class="img-container">
+                          <img src="./Photo/lasagna4.jpg" alt="" class="cards-image">
+                          <div class="cards-info">
+                              <div class="cards-title">Mince BBQ</div>
+                              <a href="./location.html"><button class="add-to-cart">BUY NOW</button></a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="slide">
+                      <div class="img-container">
+                          <img src="./Photo/lasagna5.jpg" alt="" class="cards-image">
+                          <div class="cards-info">
+                              <div class="cards-title">Mince Tandori</div>
+                              <a href="./location.html"><button class="add-to-cart">BUY NOW</button></a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="slide">
+                      <div class="img-container">
+                          <img src="./Photo/lasagna6.jpg" alt="" class="cards-image">
+                          <div class="cards-info">
+                              <div class="cards-title">Chicken Arabic Green</div>
+                              <a href="./location.html"><button class="add-to-cart">BUY NOW</button></a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="slide">
+                      <div class="img-container">
+                          <img src="./Photo/lasagna8.jpeg" alt="" class="cards-image">
+                          <div class="cards-info">
+                            <div class="cards-title">Chicken Tikka</div>
+                            <a href="./location.html"><button class="add-to-cart">BUY NOW</button></a>
+                          </div>
+                      </div>
+                    </div>
+                  <div class="slide">
+                      <div class="img-container">
+                        <img src="./Photo/lasagna9.jpeg" alt="" class="cards-image">
+                          <div class="cards-info">
+                              <div class="cards-title">Italian</div>
+                              <a href="./location.html"><button class="add-to-cart">BUY NOW</button></a>
+                            </div>
+                          </div>
+                  </div>
+                  <div class="slide">
+                    <div class="img-container">
+                          <img src="./Photo/lasagna10.jpg" alt="" class="cards-image">
+                          <div class="cards-info">
+                            <div class="cards-title">Chicken Creamy Cheese</div>
+                            <a href="./location.html"><button class="add-to-cart">BUY NOW</button></a>
+                          </div>
+                        </div>
+                  </div>
+              </div>
+            </div>
+    <!--                              *card lasagna slider end* -->
+
+    <!--                          pasta card slider start -->
+    <div class="container">
+      <h2 class="title text-danger" style="font-family: 'Dancing Script';">Our Pasta</h2>
+      <p class="description  text-dark">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam atque et eius
+          reiciendis.
+          Obcaecati atque ducimus nostrum porro enim exercitationem dignissimos adipisci similique, necessitatibus
+          impedit. Inventore veniam modi necessitatibus commodi?
+      </p>
+      <div class="cards-slider">
+        <div class="slider-wrapper">
+              <div class="slide">
+                  <div class="img-container">
+                      <img src="./Photo/pasta1.jpeg" alt="" class="cards-image">
+                      <div class="cards-info">
+                        <div class="cards-title">Mince Arabic Green</div>
+                        <a href="./location.html"><button class="add-to-cart">BUY NOW</button></a>
+                      </div>
+                  </div>
+              </div>
+              <div class="slide">
+                <div class="img-container">
+                      <img src="./Photo/pasta2.jpg" alt="" class="cards-image">
+                      <div class="cards-info">
+                          <div class="cards-title">Mince Tikka</div>
+                          <a href="./location.html"><button class="add-to-cart">BUY NOW</button></a>
+                      </div>
+                  </div>
+              </div>
+              <div class="slide">
+                  <div class="img-container">
+                      <img src="./Photo/pasta3.jpg" alt="" class="cards-image">
+                      <div class="cards-info">
+                          <div class="cards-title">Mince Mughlai</div>
+                          <a href="./location.html"><button class="add-to-cart">BUY NOW</button></a>
+                      </div>
+                  </div>
+              </div>
+              <div class="slide">
+                  <div class="img-container">
+                      <img src="./Photo/pasta4.jpg" alt="" class="cards-image">
+                      <div class="cards-info">
+                          <div class="cards-title">Mince BBQ</div>
+                          <a href="./location.html"><button class="add-to-cart">BUY NOW</button></a>
+                      </div>
+                  </div>
+              </div>
+              <div class="slide">
+                  <div class="img-container">
+                      <img src="./Photo/pasta5.jpg" alt="" class="cards-image">
+                      <div class="cards-info">
+                          <div class="cards-title">Mince Tandori</div>
+                          <a href="./location.html"><button class="add-to-cart">BUY NOW</button></a>
+                      </div>
+                  </div>
+              </div>
+              <div class="slide">
+                  <div class="img-container">
+                      <img src="./Photo/pasta6.jpg" alt="" class="cards-image">
+                      <div class="cards-info">
+                          <div class="cards-title">Chicken Arabic Green</div>
+                          <a href="./location.html"><button class="add-to-cart">BUY NOW</button></a>
+                      </div>
+                  </div>
+              </div>
+      </div>
+  </div> 
+  <!--                                  pasta card slider end -->
+  
+  <!--                             loaded fries card slider start -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+  <div class="container">
+    <h2 class="title text-danger mt-5 text-center" style="font-family: 'Dancing Script';">Our Loaded Fries</h2>
+    <p class="description  text-dark">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam atque et eius
+        reiciendis.
+        Obcaecati atque ducimus nostrum porro enim exercitationem dignissimos adipisci similique, necessitatibus
+        impedit. Inventore veniam modi necessitatibus commodi?
+    </p>
+    <div class="cards-slider">
+      <div class="slider-wrapper fries">
+            <div class="slide">
+                <div class="img-container">
+                    <img src="./Photo/loaded fries 2.jpeg" alt="" class="cards-image">
+                    <div class="cards-info">
+                      <div class="cards-title">LOADED FRIES</div>
+                      <a href="./location.html"><button class="add-to-cart">BUY NOW</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+              <div class="img-container">
+                    <img src="./Photo/mince loaded fries.jpg" alt="" class="cards-image">
+                    <div class="cards-info">
+                        <div class="cards-title">LOADED FRIES</div>
+                        <a href="./location.html"><button class="add-to-cart">BUY NOW</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="img-container">
+                    <img src="./Photo/loaded fries.jpg" alt="" class="cards-image">
+                    <div class="cards-info">
+                        <div class="cards-title">LOADED FRIES</div>
+                        <a href="./location.html"><button class="add-to-cart">BUY NOW</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="img-container">
+                    <img src="./Photo/loaded fries 5.jpg" alt="" class="cards-image">
+                    <div class="cards-info">
+                        <div class="cards-title">LOADED FRIES</div>
+                        <a href="./location.html"><button class="add-to-cart">BUY NOW</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="img-container">
+                    <img src="./Photo/loaded fries 6.jpg" alt="" class="cards-image">
+                    <div class="cards-info">
+                        <div class="cards-title">LOADED FRIES</div>
+                        <a href="./location.html"><button class="add-to-cart">BUY NOW</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="img-container">
+                    <img src="./Photo/loaded fries1.jpeg" alt="" class="cards-image">
+                    <div class="cards-info">
+                        <div class="cards-title">LOADED FRIES</div>
+                        <a href="./location.html"><button class="add-to-cart">BUY NOW</button></a>
+                    </div>
+                </div>
+            </div>      
+    </div>
+</div>
+<!--                                  loaded fries card slider end -->
+
+    <!--                       footer  start-->
+      <div class="container-fluid">
+        <div class="row" >
+          <div class="col-12 text-center bg-danger">
+            <img src="./Photo/pizzaup-removebg-preview.png" width="100px" alt="">
+            <h3 class="footer-section-mail-id text-light" style="font-family: 'Mogra';">orderfood@pizzaup.com</h3>
+            <p class="footer-section-address text-light"  style="font-family: 'Mogra';">Main Branch 11-F North-karachi</p>
+            <a href="https://www.instagram.com" class="text-light pe-3"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com" class="text-light pe-3"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="https://www.google.com" class="text-light"><i class="fa-brands fa-google"></i></a>
+          </div>
+        </div>
+      </div>
+    <!--                      footer end -->
+ 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.0/swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

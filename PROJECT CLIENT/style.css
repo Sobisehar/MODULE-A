@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Mogra&family=Norican&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  overflow-x: hidden;
+}
+/*                "index/ about/ menu/ location" navbar start */
+.img{
+  height: 100px;
+  margin-left: 50px;
+}
+/*              "index/ about/ menu/ location" navbar end */
+
+
+/*                              Banner start */
+
+.swiper-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.swiper-slide {
+  background-color: #fcfcfc;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  color: #fcfcfc;
+  font-size: 24px;
+}
+
+.swiper-slide > .swiper-slide-cover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: transparent no-repeat 50% 50% /cover;
+}
+
+body {
+  text-align: center;
+}
+
+.swiper-slide .slide-01 {
+  background-image: url(./Photo/pizza\ banner.webp);
+  transform-origin: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.swiper-slide .slide-02 {
+  background-image: url(./Photo/lasagna6.jpg);
+  transform-origin: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.swiper-slide .slide-03 {
+  background-image: url(./Photo/slider6.jpg);
+  transform-origin: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.swiper-slide .slide-04 {
+  background-image: url(./Photo/pasta5.jpg);
+  transform-origin: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.swiper-slide .slide-05 {
+  background-image: url(./Photo/pasta2.jpg);
+  transform-origin: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.swiper-scale-effect .swiper-slide-cover {
+  transition-timing-function: linear;
+  transition-duration: 20s;
+  transform: scale(1);
+}
+
+.swiper-scale-effect .swiper-slide.swiper-slide-active .swiper-slide-cover {
+  transform: scale(1.3);
+}
+
+:root {
+  --swiper-pagination-bottom: 40px;
+  --swiper-theme-color: rgba(252, 252, 252, 0.85) !important;
+}
+.swiper-lazy-preloader-white {
+  --swiper-preloader-color: #FCFCFC;
+}
+.swiper-lazy-preloader-black {
+  --swiper-preloader-color: #262626;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  background: transparent;
+  opacity: 0.55;
+  --swiper-navigation-color: rgba(252, 252, 252, 0.85);
+  transition: opacity 0.3s ease, color 0.3s ease;
+}
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background: transparent;
+  opacity: 0.85;
+  --swiper-navigation-color: #fcfcfc;
+}
+.swiper-pagination-bullet {
+  width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 10px)) !important;
+  height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 10px)) !important;
+  box-shadow: inset 1px 1px 1px rgba(38, 38, 38, 0.85);
+  background: var(--swiper-pagination-bullet-inactive-color, rgba(252, 252, 252, 0.85)) !important;
+  opacity: var(--swiper-pagination-bullet-inactive-opacity, 0.55) !important;
+  --swiper-pagination-bullet-horizontal-gap: 6px;
+}
+.swiper-pagination-bullet-active {
+  box-shadow: inset 1px 1px 1px rgba(38, 38, 38, 0.85);
+  background: var(--swiper-pagination-bullet-active-color, rgba(252, 252, 252, 0.85)) !important;
+  opacity: var(--swiper-pagination-bullet-active-opacity, 0.85) !important;
+  --swiper-pagination-bullet-horizontal-gap: 10px;
+}
+Resources
+/*                       Banner end */
+
+/*                              8 card start */
+
+.anker{
+  transition: background-color color 0.3s; 
+  background-color: grey; 
+}
+
+.anker:hover{
+  cursor: pointer;
+  background-color: rgb(211, 43, 43)!important;
+  color: ghostwhite!important;
+}
+
+@media screen and (max-width: 480px) { 
+  .anker{
+      transition: background-color color 0.3s; 
+      background-color: grey; 
+  }
+  .anker:hover{
+    cursor: pointer;
+    background-color: rgb(211, 43, 43)!important;
+    color: ghostwhite!important;
+  }
+}
+/*                            8 card end */
+
+/*                              *card pizza slider start*   */
+.img1{
+  background-repeat: no-repeat;
+
+}
+
+.container {
+  color: #f24825;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.title {
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.description {
+  width: 60%;
+  text-align: center;
+}
+
+.cards-slider {
+  overflow: hidden;
+  background-color: white;
+  width: 80vw;
+  height: 200px;
+  position: relative;
+}
+
+.cards-slider::after,
+.cards-slider::before {
+
+  position: absolute;
+  width: 50px;
+  height: 100%;
+  content: "";
+  background: linear-gradient(to right, rgba(246, 242, 239, 1) 0%, rgba(246, 242, 239, 0) 100%);
+}
+
+.cards-slider::before {
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+
+.cards-slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.slider-wrapper {
+  height: 100%;
+  width: calc(300px*18);
+  display: flex;
+  animation: slide 35s linear infinite;
+}
+.slider-wrapper:hover{
+animation-play-state: paused;
+}
+
+.slide {
+  width: 300px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.slide:has(:hover)>.img-container>.cards-info {
+  opacity: 1;
+}
+
+.img-container {
+  width: 80%;
+  height: 80%;
+  overflow: hidden;
+  position: relative;
+}
+
+.cards-image {
+  object-fit: cover;
+  width: 300px;
+}
+
+.cards-info {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  transition: all 500ms ease;
+}
+
+.cards-title {
+  font-weight: 500;
+  text-align: center;
+}
+
+.add-to-cart {
+  /* width: 70%; */
+  height: 40px;
+  border: none;
+  background: rgb(211, 43, 43);
+  color: #f6f2ef;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: transform 500ms ease;
+  cursor: pointer;
+
+  &:hover {
+      transform: scale(1.1)
+  }
+}
+
+@keyframes slide {
+  0% {
+      transform: translateX(0)
+  }
+
+  100% {
+      transform: translateX(calc(-300px*9))
+  }
+}
+/*                              *card pizza slider end*     */
+
+/*                       loaded fries card work start*/
+.fries{
+  height: 100%;
+  width: calc(300px*6);
+  display: flex;
+  animation: slide 35s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+      transform: translateX(0)
+  }
+
+  100% {
+      transform: translateX(calc(-300px*6))
+  }
+}
+/*             loaded fries card work end */

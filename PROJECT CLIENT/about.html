@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about style.css">
+    <link rel="stylesheet" href="location style.css">
+    <link rel="stylesheet" href="explore menu style.css">
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
+    <!--    font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous">
+</head>
+<body>
+<!--           Navbar start -->
+<nav class="navbar navbar-expand-lg bg-danger">
+  <div class="container-fluid">
+    <img src="./Photo/pizzaup-removebg-preview.png" class="img" alt="">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active text-light"  style="font-size: larger;" aria-current="page" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active text-light" style="font-size: larger;" href="./about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active text-light" style="font-size: larger;" href="./explore menu.html">Explore Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active text-light" style="font-size: larger;"href="./location.html">Location</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      </form>
+    </div>
+  </div>
+</nav>
+<!--          Navbar end -->
+      
+
+      <!--                        background img work start -->
+    <div class="container-fluid">
+        <div class="row abouttop bg-dark">
+            <div class="col-md-12">
+                <div class="content">
+                    <h2 class="text-light design">Pizza Up Menu</h2>
+                    <h1 class="text-light" style="font-family: 'Dancing Script'; font-weight:800;">Every Bite Is Mine</h1>
+                    <div class="clear-fix col-md-12 ">
+                        <ol class="breadcrumb col-md-12 text-dark">
+                            <li class="breadcrumb-item">
+                                <a href="./index.html" style="text-decoration: none; color: white;">Home  &nbsp;/</a>
+                            </li>
+                            <li class="breadcrumb-item active">
+                                <a href="./explore menu.html" style="text-decoration: none; color: white;">Explore Menu</a>
+                            </li>
+                        </ol>
+                    </div>
+                </div>     
+                <img width="100%" height="250px" src="./Photo/banner index.jpg" class="imgg" alt="">   
+            </div>       
+        </div>       
+    </div> 
+<!--                               background img work end -->
+
+<!--                               one card one pic work start --> 
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="./Photo/img12 cheif.jpg" alt="" class="img-fluid">
+        </div>
+        <div class="col-md-6">
+            <div class="textcontent">
+                <h2 class="heading">WELCOME TO</h2>
+                <p style="font-size: 30px; font-weight: bolder;">PIZZA UP</p>
+                <p class="text-secondary">Welcome to Pizza Up, where every bite is a flavor-packed journey! Our specialty lies in crafting thin crust premium recipe pizzas that are nothing short of a culinary masterpiece. What sets us apart is our delectable filled crust, bursting with unique and delicious sauces that elevate your pizza experience to a whole new level.</p>
+                <p class="text-secondary" >Whether you're looking to share the goodness with friends and family or indulge in a personal treat, we offer a 21-inch large pizza that's perfect for gatherings, or the option to simply order a single, mouthwatering slice. No matter how you choose to enjoy our pizzas, you're in for a treat.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--                                one card one pic work end  -->
+    
+
+<!--                          footer  start -->
+<div class="footer-section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 text-center bg-danger">
+          <img src="./Photo/pizzaup-removebg-preview.png" width="100px" alt="">
+          <h2 class="footer-section-mail-id text-light" style="font-family: 'Mogra';">orderfood@pizzaup.com</h2>
+          <p class="footer-section-address text-light" style="font-family: 'Mogra';">Main Branch 11-F North-karachi</p>
+          <a href="https://www.instagram.com" class="text-light pe-3"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.facebook.com" class="text-light pe-3"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="https://www.google.com" class="text-light"><i class="fa-brands fa-google"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--                      footer end -->
+
+  <script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+  crossorigin="anonymous"
+></script>
+  <script src="app.js"></script>
+</body>
+</html>
